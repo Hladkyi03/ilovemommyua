@@ -1,0 +1,14 @@
+.certificates-block {
+  &--margin-top-60 {
+    margin-top: 60px;
+  }
+
+  &__wrapper {
+    padding: 0 240px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+  }
+}

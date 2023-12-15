@@ -1,0 +1,11 @@
+.main {
+  background: url("./media/img/main-bg.png") center center no-repeat;
+  background-position: 100% 0%;
+  background-size: 100% auto;
+  min-height: 100vh;
+  position: relative;
+
+  &--padding-bottom-210 {
+    padding-bottom: 210px;
+  }
+}

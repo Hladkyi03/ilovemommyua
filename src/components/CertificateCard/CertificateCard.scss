@@ -1,0 +1,45 @@
+.certificate-card {
+  width: 261px;
+
+  &:not(:nth-child(-n+3)) {
+    margin-top: 32px;
+  }
+
+  &__image-wrapper {
+    border-radius: 29px;
+    border: 1px solid #F4634B;
+    background: #FFF;
+    box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+    height: 189px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    margin-top: 7px;
+    text-align: center;
+  }
+
+  &__price {
+    margin-top: 4px;
+    text-align: center;
+    color: #ED6149;
+    font-weight: 900;
+  }
+
+  &__button {
+    margin-inline: auto;
+    margin-top: 7px;
+    display: block;
+    width: 159px;
+    height: 31px;
+    border-radius: 10px;
+    background: #F4634B;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.45);
+    color: #FFF;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
