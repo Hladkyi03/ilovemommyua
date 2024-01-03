@@ -2,10 +2,34 @@
   background: url("./media/img/main-bg.png") center center no-repeat;
   background-position: 100% 0%;
   background-size: 100% auto;
-  min-height: 100vh;
+  min-height: calc(100vh - 89px);
   position: relative;
 
   &--padding-bottom-210 {
     padding-bottom: 210px;
+    min-height: calc(100vh - 89px - 210px);
+  }
+
+  &--padding-bottom-160 {
+    padding-bottom: 160px;
+    min-height: calc(100vh - 89px - 160px);
+  }
+
+  &--padding-bottom-63 {
+    padding-bottom: 63px;
+    min-height: calc(100vh - 89px - 63px);
+  }
+
+  &--padding-top-82 {
+    padding-top: 82px;
+  }
+
+  &--payment-background {
+    background: url("./media/img/payment-bg.png") center center/cover no-repeat;
+  }
+
+  &--product-details-background {
+    background: url("./media/img/bg\ pay.png") center center/cover no-repeat;
+    background-size: 100% 99%;
   }
 }

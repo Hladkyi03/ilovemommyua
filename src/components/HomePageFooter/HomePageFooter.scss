@@ -1,0 +1,128 @@
+.homepage-footer {
+  padding-bottom: 24px;
+  position: relative;
+
+  &--margin-top-131 {
+    margin-top: 131px;
+  }
+
+  &__block {
+    height: 337px;
+    border-radius: 17px;
+    background: #F4634B;
+    padding: 14px;
+  }
+
+  &__wrapper {
+    border-radius: 17px;
+    border: 1px solid #FFF;
+    height: 307px;
+    padding: 26px 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: #FFF;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__phone-numbers {
+    margin-top: 14px;
+  }
+
+  &__caption {
+    color: #FFF;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__phones-wrapper {
+    margin-top: 7px;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__info {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &--link {
+      &:hover {
+        color: #9e9999;
+      }
+    }
+  }
+
+  &__schedule {
+    margin-top: 18px;
+  }
+
+  &__schedule-wrapper {
+    margin-top: 7px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__emails {
+    margin-top: 18px;
+  }
+
+  &__emails-wrapper {
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    color: #FFF;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #9e9999;
+    }
+  }
+
+  &__socials-wrapper {
+    display: flex;
+    margin-top: 15px;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__social {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__social>img {
+    max-width: 100%;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__logo {
+    margin-top: 55px;
+    width: 500px;
+  }
+}
+
+.home-page__footer-bg {
+  position: absolute;
+  left: 0;
+  bottom: 325px;
+  z-index: -1;
+}

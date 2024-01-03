@@ -81,5 +81,10 @@
   &__icon {
     width: 18px;
     height: 18px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.08);
+    }
   }
 }

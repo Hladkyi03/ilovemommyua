@@ -1,0 +1,31 @@
+.popular-collections {
+  &--margin-top-64 {
+    margin-top: 64px;
+  }
+
+  &__title {
+    color: #F4634B;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+    color: #18191B;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__products-wrapper {
+    margin-top: 30px;
+    padding-inline: 152px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}

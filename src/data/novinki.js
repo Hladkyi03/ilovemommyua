@@ -1,0 +1,58 @@
+export const novinkiArray = [
+  {
+    id: 1,
+    type: "novinki",
+    title: 'Зимовий комплект "Тейлор"',
+    price: "1 995₴",
+    imgSrc: "img/homePageNew/image 7.png",
+  },
+  {
+    id: 2,
+    type: "novinki",
+    title: 'Зимовий комплект "Тейлор"',
+    price: "1 995₴",
+    imgSrc: "img/homePageNew/image 8.png",
+  },
+  {
+    id: 3,
+    type: "novinki",
+    title: 'Зимовий комплект "Тейлор"',
+    price: "1 995₴",
+    imgSrc: "img/homePageNew/image 9.png",
+  },
+  {
+    id: 4,
+    type: "novinki",
+    title: 'Зимовий комплект "Тейлор"',
+    price: "1 995₴",
+    imgSrc: "img/homePageNew/image 10.png",
+  },
+  {
+    id: 5,
+    type: "novinki",
+    title: 'Зимовий комплект "Тейлор"',
+    price: "1 995₴",
+    imgSrc: "img/homePageNew/image 11.png",
+  },
+  {
+    id: 6,
+    type: "novinki",
+    title: 'Зимовий комплект "Тейлор"',
+    price: "1 995₴",
+    imgSrc: "img/homePageNew/image 12.png",
+  },
+  {
+    id: 7,
+    type: "novinki",
+    title: 'Зимовий комплект "Тейлор"',
+    price: "1 995₴",
+    imgSrc: "img/homePageNew/image 13.png",
+  },
+  {
+    id: 8,
+    type: "novinki",
+    title: 'Зимовий комплект "Тейлор"',
+    price: "1 995₴",
+    imgSrc: "img/homePageNew/image 14.png",
+  },
+];

@@ -5,7 +5,11 @@ import { Link } from 'react-router-dom';
 import CartSvg from '../../media/icons/Cart.png';
 import ProfileSvg from '../../media/icons/Profile.png';
 
-export const Header = () => {
+export const Header = ({ setModalEnabled }) => {
+  const handleOnClick = () => {
+    setModalEnabled(true);
+  }
+
   return (
     <header className="header">
       <div className="container">
@@ -27,12 +31,14 @@ export const Header = () => {
 
 
             <div className="header__buttons-wrapper">
-              <button className="header__button">
-                <img src={CartSvg} alt="cart" className="header__icon" />
-              </button>
+              <Link to="/cart" >
+                <button className="header__button">
+                  <img src={CartSvg} alt="cart" className="header__icon" />
+                </button>
+              </Link>
 
-              <button className="header__button">
-              <img src={ProfileSvg} alt="profile" className="header__icon" />
+              <button className="header__button" onClick={handleOnClick}>
+                <img src={ProfileSvg} alt="profile" className="header__icon" />
               </button>
             </div>
           </div>

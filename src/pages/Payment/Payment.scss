@@ -1,0 +1,198 @@
+.payment {
+  height: 100%;
+  padding-top: 223px;
+
+  &__wrapper {
+    margin: 0 auto;
+    padding: 208px 33px 53px;
+    border-radius: 33px;
+    background: #FFF;
+    box-shadow: 0px 4px 48px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    width: 761px;
+    position: relative;
+  }
+
+  &__label {
+    display: block;
+    color: #A1A1A1;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    padding-inline: 12px;
+    margin-top: 6px;
+    display: block;
+    width: 100%;
+    border-radius: 13px;
+    border: 1px solid #A1A1A1;
+    background: #E9E9E9;
+    height: 52px;
+
+    &--short {
+      width: 210px;
+    }
+  }
+
+  &__input-name-wrapper {
+    margin-top: 22px;
+  }
+
+  &__bottom-wrapper {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+  }
+
+  &__select {
+    margin-top: 6px;
+    padding-inline: 12px;
+    border-radius: 13px;
+    border: 1px solid #A1A1A1;
+    background: #E9E9E9;
+    width: 210px;
+    height: 52px;
+  }
+
+  &__button {
+    margin-top: 39px;
+    border-radius: 13px;
+    background: #EC6049;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: inherit;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__card {
+    position: absolute;
+    width: 588px;
+    height: 336px;
+    padding: 28px 33px;
+    border-radius: 25px;
+    background: #EC6049;
+    top: -52%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+  }
+
+  &__card-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__card-label {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__date-input-wrapper {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__card-number {
+    margin-top: 14px;
+    color: #FFF;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    width: 360px;
+
+    &::placeholder {
+      color: #FFF;
+      font-family: Montserrat Alternates;
+      font-size: 34px;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    &--mounth {
+      margin-top: 0;
+      font-size: 25px;
+      font-weight: 400;
+      width: 37px;
+    }
+
+    &--mounth {
+      &::placeholder {
+        font-size: 25px;
+        font-weight: 400;
+      }
+    }
+
+    &--year {
+      margin-top: 0;
+      font-size: 25px;
+      font-weight: 400;
+      width: 100%;
+    }
+
+    &--year {
+      &::placeholder {
+        font-size: 25px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__card-text {
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 360px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+
+    &::placeholder {
+      color: #FFF;
+      font-family: Montserrat Alternates;
+      font-size: 19px;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  &__card-bottom-wrapper {
+    margin-top: 27px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__date-wrapper {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+  }
+}
+
+option {
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  color: #000;
+}

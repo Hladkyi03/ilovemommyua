@@ -1,0 +1,40 @@
+.about-us-footer {
+  &--margin-top-130 {
+    margin-top: 130px;
+  }
+
+  margin-top: 500px;
+
+  &__title {
+    color: #F4634B;
+    font-size: 45px;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__socials-wrapper {
+    margin-top: 17px;
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__social {
+    width: 78px;
+    height: 78px;
+    border-radius: 15px;
+    background-color: #F4634B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #881602;
+    }
+  }
+}

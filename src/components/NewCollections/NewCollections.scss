@@ -1,0 +1,44 @@
+.new-collections {
+  background: url('../../media/img/glavnaya.png') center center/cover no-repeat;
+  height: 733px;
+  padding-top: 300px;
+
+  &__wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: max-content;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 834px;
+    height: 89px;
+    padding: 6px;
+    color: #F4634B;
+    font-size: 64px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 4px 20.7px 0px rgba(0, 0, 0, 0.25);
+    transform: rotate(-1.671deg);
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title-background {
+    display: block;
+    width: 775px;
+    height: 84px;
+    position: absolute;
+    transform: rotate(-1.671deg);
+    border-radius: 12px;
+    background: #F4634B;
+    box-shadow: 0px 4px 20.7px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    top: -10px;
+    left: 70px;
+  }
+}

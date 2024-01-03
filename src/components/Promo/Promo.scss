@@ -1,0 +1,40 @@
+.promo {
+  &__background {
+    border-radius: 17px;
+    height: 292px;
+    padding: 11px;
+
+    &--boys {
+      background: antiquewhite url('../../media/img/cute-stylish-children-white-1\ 1\ \(0-00-00-00\).png') center center/cover no-repeat;
+    }
+
+    &--girls {
+      background: antiquewhite url('../../media/img/cute-stylish-children-white-studio\ 1\ \(0-00-00-00\).png') center center/cover no-repeat;
+    }
+
+    &--toys {
+      background: antiquewhite url('../../media/img/image\ 15.png') center center/contain no-repeat;
+    }
+  }
+
+  &__wrapper {
+    border-radius: 17px;
+    border: 1px solid #FFF;
+    height: 267px;
+    font-size: 53px;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 60px;
+  }
+
+  &__left-text {
+    color: #F4634B;
+  }
+
+  &__right-text {
+    color: #000;
+  }
+}

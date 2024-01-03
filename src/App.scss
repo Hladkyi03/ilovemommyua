@@ -14,6 +14,14 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+
+  &--padding-inline-145 {
+    padding-inline: 145px;
+  }
+
+  &--padding-inline-71 {
+    padding-inline: 71px;
+  }
 }
 
 .footer {

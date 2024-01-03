@@ -13,5 +13,17 @@
     line-height: normal;
     text-decoration: none;
     cursor: pointer;
+    transition: color 0.3s ease;
+
+    &--active {
+      color: #F4634B;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    &:hover {
+      color: #F4634B;
+    }
   }
 }

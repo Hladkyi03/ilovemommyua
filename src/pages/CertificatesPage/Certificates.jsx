@@ -1,6 +1,6 @@
-import { CertificatesBlock } from '../components/CertificatesBlock/CertificatesBlock';
-import { CertificatesFooter } from '../components/CertificatesFooter/CertificatesFooter';
-import '../main.scss';
+import { CertificatesBlock } from '../../components/CertificatesBlock/CertificatesBlock';
+import { CertificatesFooter } from '../../components/CertificatesFooter/CertificatesFooter';
+import '../../main.scss';
 import './Certificates.scss';
 
 export const Certificates = () => {

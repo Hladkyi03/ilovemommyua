@@ -1,0 +1,33 @@
+.photo-gallery {
+  position: relative;
+  z-index: 2;
+
+  &__main-photo {
+    width: 578px;
+    display: flex;
+    align-items: center;
+    height: 611px;
+  }
+
+  &__main-img {
+    max-width: 541px;
+    height: auto;
+    max-height: 611px;
+    width: 100%;
+    align-self: flex-end;
+  }
+
+  &__bottom-photos {
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 69px;
+  }
+
+  &__bottom-photo {
+    width: 121px;
+    height: auto;
+    max-height: 137px;
+  }
+}

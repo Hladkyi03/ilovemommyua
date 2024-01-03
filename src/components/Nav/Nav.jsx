@@ -1,34 +1,38 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Nav.scss';
+import classNames from 'classnames';
+
+const handleIsActive = ({ isActive }) => (
+  classNames('nav__link', { 'nav__link--active': isActive }));
 
 export const Nav = () => {
   return (
     <nav className="nav">
       <ul className="nav__list">
         <li className="nav__item">
-          <Link to="/home" className="nav__link">
+          <NavLink to="/home" className={handleIsActive}>
             Головна
-          </Link>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <Link to="forGirls" className="nav__link">
+          <NavLink to="/forGirls" className={handleIsActive}>
             Дівчатам
-          </Link>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <Link to="forBoys" className="nav__link">
+          <NavLink to="/forBoys" className={handleIsActive}>
             Хлопцям
-          </Link>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <Link to="toys" className="nav__link">
+          <NavLink to="/toys" className={handleIsActive}>
             Іграшки
-          </Link>
+          </NavLink>
         </li>
         <li className="nav__item">
-          <Link to="about-us" className="nav__link">
+          <NavLink to="/about-us" className={handleIsActive}>
             Про нас
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
