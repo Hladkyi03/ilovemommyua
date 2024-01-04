@@ -4,33 +4,28 @@ import './PhotoGallery.scss';
 export const PhotoGallery = ({ product }) => {
   const { imagesSrc } = product;
 
-  const [mainImage, setMainImage] = useState(0);
-  const [bottomImages, setBottomImages] = useState(imagesSrc.filter((_, index) => index !== mainImage));
-
-  console.log(bottomImages);
+  const [mainImageIndex, setMainImageIndex] = useState(0);
+  const [images, setImages] = useState([...imagesSrc]);
 
   const handleNextClick = () => {
-    let bottomImagesCopy = [...bottomImages];
-    bottomImagesCopy.splice(mainImage, 1);
+    const updatedPhotos = [...images];
 
-    bottomImagesCopy.push(imagesSrc[mainImage]);
+    const removedPhoto = updatedPhotos.shift();
+    updatedPhotos.push(removedPhoto);
 
-    setBottomImages(bottomImagesCopy);
-    setMainImage(prev => prev + 1);
+    setImages(updatedPhotos);
+    setMainImageIndex((mainImageIndex + 1) % images.length);
   }
 
-  const handleImageClick = (i) => {
-    let bottomImagesCopy = [...bottomImages];
+  const handlePrevClick = () => {
+    const updatedPhotos = [...images];
 
-    const imageIndex = bottomImagesCopy.indexOf(imagesSrc[i])
+    const lastPhoto = updatedPhotos.pop();
+    updatedPhotos.unshift(lastPhoto);
 
-    bottomImagesCopy[imageIndex] = imagesSrc[mainImage];
-
-    setBottomImages(bottomImagesCopy);
-    setMainImage(i);
-  }
-
-  let i = -6;
+    setImages(updatedPhotos);
+    setMainImageIndex((mainImageIndex - 1 + images.length) % images.length);
+  };
 
   return (
     <div className="photo-gallery">
@@ -40,7 +35,7 @@ export const PhotoGallery = ({ product }) => {
           data-cy="prev"
           type="button"
           className="photo-gallery__button photo-gallery__button--prev"
-          onClick={() => setMainImage(prev => --prev)}
+          onClick={handlePrevClick}
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="45" height="49" viewBox="0 0 45 49" fill="none">
             <g filter="url(#filter0_d_34_188)">
@@ -63,14 +58,14 @@ export const PhotoGallery = ({ product }) => {
           </svg>
         </button>
 
-        <img src={imagesSrc[mainImage]} alt="product" className='photo-gallery__main-img' />
+        <img src={imagesSrc[mainImageIndex]} alt="product" className='photo-gallery__main-img' />
 
         <button
           aria-label="Next"
           data-cy="next"
           type="button"
           className="photo-gallery__button photo-gallery__button--next"
-          onClick={() => handleNextClick()}
+          onClick={handleNextClick}
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="45" height="48" viewBox="0 0 45 48" fill="none">
             <g filter="url(#filter0_d_34_189)">
@@ -95,14 +90,13 @@ export const PhotoGallery = ({ product }) => {
       </div>
 
       <div className="photo-gallery__bottom-photos">
-        {bottomImages.map(photoSrc => {
+        {images.slice(1).map((photoSrc, index) => {
           return (
             <img
               src={photoSrc}
               alt="product"
               className="photo-gallery__bottom-photo"
-              key={i++}
-              onClick={() => handleImageClick(imagesSrc.findIndex(src => src === photoSrc))}
+              key={index}
             />
           )
         })}

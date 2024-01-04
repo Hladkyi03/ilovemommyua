@@ -23,11 +23,16 @@
     align-items: center;
     justify-content: center;
     gap: 69px;
+    height: 137px;
   }
 
   &__bottom-photo {
     width: 121px;
     height: auto;
     max-height: 137px;
+  }
+
+  &__button {
+    background: transparent;
   }
 }

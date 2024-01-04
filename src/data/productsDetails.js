@@ -249,9 +249,9 @@ export const productsDetails = [
     price: "1 995₴",
     imagesSrc: [
       "img/homePageNew/image 8.png",
-      "img/homePageNew/image 9.png",
-      "img/homePageNew/image 10.png",
-      "img/homePageNew/image 11.png"
+      "img/girls/new/sneak2.png",
+      "img/girls/new/sneak1.png",
+      "img/girls/new/sneak4.png"
     ],
     availableSizes: [2, 6, 11],
     description: [
@@ -410,10 +410,10 @@ export const productsDetails = [
     title: 'Зимовий комплект "Тейлор"',
     price: "1 995₴",
     imagesSrc: [
-      "img/homePageNew/image 14.png",
-      "img/homePageNew/image 14.png",
-      "img/homePageNew/image 14.png",
-      "img/homePageNew/image 14.png"
+      "img/girls/new/sneak1-2.png",
+      "img/girls/new/sneak2-2.png",
+      "img/girls/new/sneak3-2.png",
+      "img/girls/new/sneak1-4.png"
     ],
     availableSizes: [2, 6, 9, 11],
     description: [

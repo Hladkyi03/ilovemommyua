@@ -53,7 +53,7 @@ export const girlsClothes = [
     type: "new",
     title: 'Зимовий комплект "Тейлор"',
     price: "1 995₴",
-    imgSrc: "img/homePageNew/image 14.png",
+    imgSrc: "img/girls/new/sneak1-2.png",
   },
 
   {
